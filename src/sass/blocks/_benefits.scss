@@ -1,0 +1,40 @@
+.benefits {
+    padding: 73px 0 65px 0;
+    min-height: 473px;
+    background: #F6F6F6;
+    &__header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        color: $main-font-color;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        color: $main-font-color;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 35px 0 20px 0
+
+    }
+    &__wrapper {
+        display:flex;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 277px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        img {
+            width: 70px;
+        }
+        a {
+            color: $main-theme-color;
+            text-transform: uppercase;
+        }
+    }
+}

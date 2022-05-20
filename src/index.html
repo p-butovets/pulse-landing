@@ -1,17 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RunSmart</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <h1 class="title">This is html+css+js project template</h1>
-    <h2 class="subtitle">Using sass + gulp</h2>
+    <div class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <div class="header__official">
+                    Официальный представитель
+                    <span>Garmin, Polar, Suunto</span>
+                </div>
+                <div class="header__contacts">
+                    <a class="header__phone" href="tel:+380963268868">+38 (096) 326-88-68</a>
+                    <button class="button">заказать звонок</button>
+                </div>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Подбор пульсометра</h1>
+                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/timer_icon.png" alt="timer">
+                        Время подбора:
+                        10 минут
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/handcart_icon.png" alt="handcart">
+                        Бесплатная доставка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/messages_icon.png" alt="messages">
+                        Ответим на все вопросы
+                    </div>
+                </div>
+                <button class="button button_main">заказать консультацию</button>
+                <div class="promo__link">
+                    или
+                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="benefits">
+        <div class="container">
+            <div class="benefits__header">Наши преимущества</div>
+            <div class="benefits__wrapper">
+                <div class="benefits__card">
+                    <img src="icons/cup_icon.png" alt="cup">
+                    <div class="benefits__subheader">Делимся опытом</div>
+                    Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли
+                    Босфор, готовятся к соревнованиям по триатлону!
+                </div>
+                <div class="benefits__card">
+                    <img src="icons/heart_icon.png" alt="heart">
+                    <div class="benefits__subheader">Заботимся о здоровье</div>
+                    Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам
+                    и Вашим близким!
+                </div>
+                <div class="benefits__card">
+                    <img src="icons/shoe_icon.png" alt="shoe">
+                    <div class="benefits__subheader">Учим бегать</div>
+                    Помогаем с обучением правильной технике бега!
+                    Дружим с крупнейшей школой бега в России - <a href="#">i love running.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consult">
+        <div class="container">
+            <div class="title title_white ">Получите бесплатную консультацию по подбору пульсометра</div>
+            <div class="subtitle subtitle_white">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10
+                минут
+            </div>
+            <form class="feed-form" action="#">
+                <input required type="text" placeholder="Ваше имя">
+                <input required type="tel" placeholder="Ваш телефон">
+                <input required type="email" placeholder="Ваш имейл">
+                <button class="button button_main button_submit" type="submit">заказать консультацию</button>
+            </form>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

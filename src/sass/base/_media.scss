@@ -1,0 +1,127 @@
+@media (max-width: 991px) {
+    .promo__wrapper {
+        align-items: center;
+    }
+    .header {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        padding-bottom: 20px;
+    };
+    .header {
+        &__phone {
+            font-size: 16px;
+        }
+        &__official {
+            display: none;
+        }
+    }
+
+    .benefits {
+        padding-top: 35px;
+        &__header {
+            font-size: 23px;
+        }
+        &__subheader {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items:center;
+            padding-top: 20px;
+        }
+        &__card {
+            width: 80%;
+            font-size: 16px;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        padding: 15px 15px 30px 15px;
+        &__icons {
+            width: 340px;
+            padding-top: 45px;
+        }
+        &__header {
+            font-size: 38px;
+            line-height: 45px;
+        }
+        &__subheader {
+            font-size: 21px;
+        }
+        &__wrapper {
+            justify-content: center;
+            padding-top: 35px;
+        }
+        &__link {
+            padding-top: 36px;
+        }
+    }
+    .header {
+        max-width: 100%;
+        &__logo {
+            img {
+                width: 90%;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        .button {
+            width: 147px;
+            height: 31px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        &__icons {
+            width: 300px;
+        }
+        &__icon {
+            font-size: 13px;
+        }
+    }
+    .button {
+        &_main {
+            width: 253px;
+            margin-top: 45px;
+        }
+    }
+}
+
+@media (min-width: 2056px) {
+    .promo {
+        &__header {
+            font-size: 79px;
+            font-weight: 900;
+        }
+        &__subheader {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+        &__icons {
+            width: 460px;
+        }
+    .button {
+        width: 178px;
+        font-size: 15px;
+        &_main {
+            width: 455px;
+            font-size: 22px;
+        }
+    }
+    }
+}
