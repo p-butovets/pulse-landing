@@ -15,7 +15,7 @@
         border: none;
         border-radius: 5px;
         &:focus {
-            border: 2px solid $main-theme-color;
+            outline: 1px solid $main-theme-color;;
         }
     }
 }

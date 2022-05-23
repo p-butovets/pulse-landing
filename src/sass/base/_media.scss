@@ -11,6 +11,14 @@
     .consult {
         padding: 100px 15px 94px 15px;
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+        }
+    }
+    .slick-dots {
+        right: 45vw;
+    }
 }
 
 @media (max-width: 767px) {
@@ -55,11 +63,20 @@
             padding-top: 20px;
         }
     }
+    .carousel {
+        padding-top: 43px;
+    }
 }
 
 @media (max-width: 576px) {
+    .title {
+        font-size: 23px;
+    }
+    .benefits {
+        padding: 73px 33px 65px 33px;
+    }
     .promo {
-        padding: 15px 15px 30px 15px;
+        padding: 15px 26px 30px 26px;
         &__icons {
             width: 340px;
             padding-top: 45px;
@@ -93,6 +110,9 @@
             width: 147px;
             height: 31px;
         }
+    }
+    .slick-dots {
+        right: 43vw;
     }
 }
 
@@ -130,6 +150,9 @@
     }
     .subtitle {
         font-size: 14px;
+    }
+    .slick-dots {
+        bottom: 20px;
     }
 }
 

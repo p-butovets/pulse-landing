@@ -6,6 +6,8 @@
 @import "blocks/benefits";
 @import "blocks/consult";
 @import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -21,7 +23,8 @@
     font-size: 36px;
     text-transform: uppercase;
     &_black {
-        color: $main-font-color
+        color: $main-font-color;
+        text-align: center;
     }
     &_white {
         color: #fff;
@@ -40,6 +43,7 @@
         margin-top: 8px;
     }
 }
+
 
 
 @import "base/media";
