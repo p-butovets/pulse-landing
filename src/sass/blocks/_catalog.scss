@@ -1,11 +1,15 @@
 .catalog {
     &__content {
         padding-bottom: 40px;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: top;
         gap: 17px;
         flex-wrap: wrap;
+        transition: $hover-transition;
+        &_active {
+            display:flex;
+        }
     }
     &__tabs {
         margin-top: 46px;
@@ -16,6 +20,7 @@
         gap: 10px;
         padding: 0;
         padding-bottom: 46px;
+        transition: $hover-transition;
     }
     &__tab {
         font-weight: 400;
@@ -44,6 +49,7 @@
         }
     }
     &-item {
+        overflow: hidden;
         border: 2px solid #D0D0D0;
         text-align: center;
         padding:20px 15px;
@@ -80,6 +86,16 @@
                 color: $main-theme-color;
             }
         }
+        &__back {
+            font-weight: 500;
+            font-size: 14px;
+            color: $main-theme-color;
+            text-transform: uppercase;
+            margin-top: 10px;
+            &:hover {
+                color: $main-theme-color;
+            }
+        }
         &__footer {
             display:flex;
             justify-content: space-between;
@@ -92,6 +108,53 @@
         &__new-price {
             font-weight: 700;
             font-size: 20px;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 34px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+                margin-right: 17px;
+            }
+        }
+        &__list {
+            width: 50%;
+            margin-left: 17px;
+            transform: translateX(0%);
+            padding-right: 17px;
+            transition: $hover-transition;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0;
+                
+            }
+            ul {
+                list-style: none;
+                padding-left: 15px;
+                margin-bottom: 0;
+                background-color: #fff;
+            }
+            li {
+                text-align: left;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                margin-bottom: 5px;
+                &:before {
+                    content: "\2022"; 
+                    color: $main-theme-color;
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1em; 
+                    margin-left: -1em;
+                }
+            }
         }
     }
     

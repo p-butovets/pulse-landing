@@ -19,6 +19,12 @@
     .slick-dots {
         right: 45vw;
     }
+    .catalog__tab {
+        transform: none;
+        div {
+            transform: none;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -65,6 +71,53 @@
     }
     .carousel {
         padding-top: 43px;
+    }
+    .catalog__tab {
+        width: 25vw;
+        div {
+            font-size: 2.5vw;
+        }
+    }
+    .catalog-item {
+        width: 450px;
+        &__title {
+            font-size: 32px;
+        }
+        &__descr {
+            font-size: 22px;
+            padding-bottom: 27px;
+        }
+        &__footer {
+            justify-content:space-around;
+        }
+        &__img {
+            height: 200px;
+        }
+        &__old-price {
+            font-size: 18px;
+        }
+        &__new-price {
+            font-size: 27px;
+        }
+        &__link {
+            font-size: 20px;
+        }
+        &__back {
+            font-size: 20px;
+        }
+        &__list {
+            padding-left: 36px;
+            padding-right: 36px;
+            li {
+                font-size: 23px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .button__catalog-item {
+        width: 158px;
+        height: 64px;
+        font-size: 21px;
     }
 }
 
@@ -114,6 +167,59 @@
     .slick-dots {
         right: 43vw;
     }
+    .catalog-item {
+        width: 300px;
+    }
+    .catalog {
+        &__tab {
+            width: 30vw;
+            height: 40px;
+            line-height: 38px;
+            div {
+                font-size: 3vw;
+            }
+        }
+        &__tabs {
+            margin-top: 24px;
+            padding-bottom: 24px;
+        }
+        &-item {
+            &__title {
+                font-size: 22px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+            &__new-price {
+                font-size: 19px;
+            }
+            &__old-price {
+                font-size: 15px;
+            }
+            &__img {
+                height: 140px;
+            }
+            &__link {
+                font-size: 15px;
+            }
+            &__back {
+                font-size: 15px;
+            }
+            &__list {
+                padding-right: 10px;
+                padding-left: 10px;
+                li {
+                font-size: 14px;
+                padding-bottom: 0;
+            }
+            } 
+        }
+    .button__catalog-item {
+        width: 112px;
+        height: 51px;
+        font-size: 18px;
+    }
+    }
 }
 
 @media (max-width: 320px) {
@@ -153,6 +259,9 @@
     }
     .slick-dots {
         bottom: 20px;
+    }
+    .carousel {
+        padding-bottom: 0;
     }
 }
 
