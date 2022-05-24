@@ -25,6 +25,9 @@
             transform: none;
         }
     }
+    .reviews {
+        padding: 40px 40px 40px 40px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -220,6 +223,21 @@
         font-size: 18px;
     }
     }
+    .reviews {
+        padding: 20px 20px 20px 20px;
+        &-item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            gap: 12px;
+            &__descr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 320px) {
