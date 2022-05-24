@@ -237,6 +237,13 @@
             }
         }
     }
+    .footer {
+        &__contacts {
+            width: 100%;
+            height: 245px;
+            padding: 20px 10px 20px 10px;
+        }
+    }
     
 }
 
@@ -299,7 +306,7 @@
         }
         &__icons {
             width: 460px;
-        }
+        }  
     .button {
         width: 178px;
         font-size: 15px;
