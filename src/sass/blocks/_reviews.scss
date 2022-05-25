@@ -10,7 +10,7 @@
         &__name {
             font-weight: 700;
             font-size: 18px;
-            color: #0D0D0D;
+            color: $main-font-color;
         }
         &__img {
             width: 170px;
@@ -24,7 +24,7 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
-            color: #0D0D0D;
+            color: $main-font-color;
             margin-top: 10px;
         }
     }

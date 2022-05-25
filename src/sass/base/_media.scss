@@ -241,10 +241,27 @@
         &__contacts {
             width: 100%;
             height: 245px;
-            padding: 20px 10px 20px 10px;
+            padding: 20px 10px 10px 10px;
         }
     }
-    
+    .modal {
+        width: 286px;
+        padding: 20px 10px;
+        &__title {
+            font-size: 16px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+    .overlay {
+        .feed-form {
+            width: 100%;
+        }
+        .button_main {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 320px) {

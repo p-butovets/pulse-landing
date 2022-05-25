@@ -1,0 +1,48 @@
+.overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.56)
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 382px;
+    padding: 35px 40px 40px 40px;
+    min-height: 402px;
+    background: #F2F2F2;
+    transform: translate(50%, -50%);
+    &__close {
+        position: absolute;
+        right: -40px;
+        top:-3px;
+        color: $main-theme-color;
+        font-size: 35px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: $main-font-color;
+    }
+    &__subtitle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        color: $main-font-color;
+    }
+    &-thankyou {
+        min-height: 143px;
+    }
+}
+
+
+#modal-order, #modal-callback, #modal-thankyou, .overlay {
+    display:none;
+}

@@ -36,4 +36,20 @@ $(document).ready(function () {
 
         });
     });
+
+    //Modals
+    $('.modal__close, .overlay').on('click', function () {
+        $('.overlay, #modal-callback, #modal-order, #modal-thankyou').fadeOut();
+    });
+
+    $('[data-modal=modal-callback]').on('click', function () {
+        $('.overlay, #modal-callback').fadeIn();
+    });
+
+    $('.button__catalog-item').each(function (i) {
+        $(this).on('click', function () {
+            $('#modal-order .modal__subtitle').text($('.catalog-item__title').eq(i).text());
+            $('.overlay, #modal-order').fadeIn();
+        });
+    });
 });
