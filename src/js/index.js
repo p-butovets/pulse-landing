@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     //Modals
-    $('.modal__close, .overlay').on('click', function () {
+    $('.modal__close').on('click', function () {
         $('.overlay, #modal-callback, #modal-order, #modal-thankyou').fadeOut();
     });
 
@@ -51,5 +51,62 @@ $(document).ready(function () {
             $('#modal-order .modal__subtitle').text($('.catalog-item__title').eq(i).text());
             $('.overlay, #modal-order').fadeIn();
         });
+    });
+
+    //Validation
+    function validateForm(form) {
+        $(form).validate({
+            errorClass: "invalid",
+            onsubmit: true,
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "*Имя не может быть пустым",
+                phone: "*Укажите телефон",
+                email: {
+                    required: "*Укажите вашу почту",
+                    email: "*Адрес почты не корректный"
+                }
+            }
+        });
+    }
+
+    validateForm('#modal-callback form');
+    validateForm('#modal-order form');
+    validateForm('#consult');
+
+    //Send email
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: "https://rokkwork.space/mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#modal-callback, #modal-order').fadeOut();
+            $('.overlay, #modal-thankyou').fadeIn();
+            $('form').trigger('reset');
+        });
+    });
+
+    //Smooth scroll
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
     });
 });

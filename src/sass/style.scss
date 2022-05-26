@@ -11,9 +11,14 @@
 @import "blocks/reviews";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/pageup";
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {

@@ -40,9 +40,15 @@
     &-thankyou {
         min-height: 143px;
     }
+    //Validation errors
+    .invalid {
+        margin: 0 auto;
+        color: $main-theme-color;
+    }
 }
 
 
 #modal-order, #modal-callback, #modal-thankyou, .overlay {
     display:none;
 }
+
