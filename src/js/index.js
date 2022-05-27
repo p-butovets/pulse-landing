@@ -109,4 +109,7 @@ $(document).ready(function () {
             $('.pageup').fadeOut();
         }
     });
+
+    //Wowjs
+    new WOW().init();
 });
