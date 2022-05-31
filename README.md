@@ -1,1 +1,1 @@
-# pulse-landing
+# Landing page for Pulsometer store
